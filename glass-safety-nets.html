@@ -86,9 +86,11 @@
     <div class="container-fluid bg-secondary navbar-sticky">
         <div class="container">
             <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white fw-bold d-block">Secure <span class="text-primary">SafetyNets</span></h1>
-                </a>
+                <a href="index.html" class="navbar-brand d-flex align-items-center me-auto ps-2">
+                    <img src="img/Perfect_logo.png" alt="Secure SafetyNets Logo" class="img-fluid logo-img">
+                    <h3 class="text-white fw-bold d-block ms-2 site-title">Secure <span class="text-primary">SafetyNets</span></h3>
+                </a>                                        
+                
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -337,10 +339,11 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <a href="#" class="h3 text-secondary">About</a>
-                    <a href="index.html">
-                        <h4 class=" mt-2 text-white fw-bold d-block">Secure <span class="text-secondary">SafetyNets</span>
-                            </h1>
+                    <a href="index.html" class="d-flex align-items-center mt-2">
+                        <img src="img/Perfect_logo.png" alt="Secure SafetyNets Logo" class="img-fluid me-2" style="max-width: 60px; height: auto;">
+                        <h4 class="text-white fw-bold mb-0">Secure <span class="text-secondary">SafetyNets</span></h4>
                     </a>
+                    
                     <p class="mt-2 text-light">We provide top-quality safety nets for homes and industries, ensuring security and protection.</p>
                     <div class="d-flex hightech-link">
                         <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
@@ -413,7 +416,7 @@
                     <a href="#" class="h3 text-secondary">Contact Us</a>
                     <div class="text-white mt-4 d-flex flex-column contact-link">
                         <a href="#" class="pb-3 text-light border-bottom border-primary"><i
-                                class="fas fa-map-marker-alt text-secondary me-2"></i>Kukatpally,Hyderabad</a>
+                                class="fas fa-map-marker-alt text-secondary me-2"></i>Gachibowli ,Hyderabad</a>
                         <a href="tel:9392339902" class="py-3 text-light border-bottom border-primary"><i
                                 class="fas fa-phone-alt text-secondary me-2"></i>+91 9392339902</a>
                         <a href="https://wa.me/919573355396?text=Hello%20I%20am%20interested%20in%20your%20services" class="py-3 text-light border-bottom border-primary"> <i
@@ -427,23 +430,41 @@
             <hr class="text-light mt-5 mb-4">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
-                    <span class="text-light"><a href="#" class="text-secondary"><i
-                                class="fas fa-copyright text-secondary me-2"></i>Secure Safety Nets</a>, All right
-                        reserved.</span>
+                    <span class="text-light"><a href="#" class="text-secondary">Copyright <i
+                                class="fas fa-copyright text-secondary me-2"></i>2025.</a> All rights reserved by Secure Safety Nets</span>
                 </div>
-               <!-- <div class="col-md-6 text-center text-md-end">
-                        /*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/
-                        <span class="text-light">Designed By<a href="https://htmlcodex.com" class="text-secondary">HTML
-                                Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a></span>
-                    </div> -->
+                <div class="col-md-6 text-center text-md-end">
+                    <!-- /*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <span class="text-light">Designed By<a href="https://www.linkedin.com/in/ramprasad-bandaru-a86693280" class="text-secondary"> Ramprasad</a></span>
+                </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+    <!-- WhatsApp Icon -->
+    <a id="whatsappBtn" href="https://wa.me/919573355396?text=Hello%20I%20am%20interested%20in%20your%20services"
+        target="_blank"
+        class="floating-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="floating-icon">
+        <i class="fa fa-arrow-up text-white"></i>
+    </a>
+    
+    <script>
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 100) {
+            backToTop.style.display = 'flex';
+          } else {
+            backToTop.style.display = 'none';
+          }
+        });
+      </script>
 
 
     <!-- JavaScript Libraries -->

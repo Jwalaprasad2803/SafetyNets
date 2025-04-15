@@ -893,4 +893,80 @@ body {
     padding-top: 0px; /* Adjust this if you want space between navbar and content */
 }
 
+/* Default (desktop) logo and text size */
+.logo-img {
+    max-width: 80px;
+    height: auto;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.whatsapp-float-icon {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    font-size: 60px;
+    color: #25D366;
+    z-index: 1000;
+}
+
+.floating-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: fixed;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  #backToTop {
+    bottom: 20px;
+    background-color: #007bff;
+    display: none; /* Hidden by default */
+  }
+
+  #whatsappBtn {
+    bottom: 80px;
+    background-color: #25D366;
+    color: white;
+  }
+
+
+
+/* Mobile view (screens less than 576px wide) */
+@media (max-width: 576px) {
+    .logo-img {
+        max-width: 40px; /* Smaller logo on mobile */
+    }
+
+    .site-title {
+        font-size: 1rem; /* Smaller text on mobile */
+    }
+
+    .whatsapp-float-icon {
+        font-size: 40px; /* smaller size for mobile */
+        bottom: 70px;
+        right: 15px;
+    }
+
+    .floating-icon {
+          width: 40px !important;
+          height: 40px !important;
+          font-size: 18px !important;
+    }
+      
+
+}
+
+
+
+
 
